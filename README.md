@@ -1,16 +1,16 @@
-# **[Enter Project Name]**
+# **Address Book**
 
 #### By William Chu
 
 ## Description
 
-[Enter description]
+JavaScript address book exercise to practice creating constructors and prototypes for objects
 
 ## Specifications
 
-| Specification | Input | Output
+| Specification | Input | Output |
 | --- | --- | --- |
-| | | |
+| Description | Input =  | Output = |
 
 ## Setup/Installation Requirements
 
