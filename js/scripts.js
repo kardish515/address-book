@@ -12,6 +12,16 @@ function Address(addressType, street, city, state) { //function method creates a
   this.state = state;
 }
 
+function resetFields() {
+  $("input#new-first-name").val(""); //emptying out the values for the form
+  $("input#new-last-name").val("");
+  $("input.address-type").val("");
+  $("input.new-street").val("");
+  $("input.new-city").val("");
+  $("input.new-state").val("");
+  $("#extra-addresses").empty();
+}
+
 Contact.prototype.fullName = function() { //prototype concatinating the first + last name
   return this.firstName + " " +this.lastName;
 }
@@ -80,13 +90,19 @@ $(document).ready(function() {
       });
     });
 
-    $("input#new-first-name").val(""); //emptying out the values for the form
-    $("input#new-last-name").val("");
-    $("input.address-type").val("");
-    $("input.new-street").val("");
-    $("input.new-city").val("");
-    $("input.new-state").val("");
-    $("#extra-addresses").empty();
+    $(".contact").last().hover(function() {
+      $("#show-contact").hide();
+      $("#show-contact").fadeIn();
+      $("#show-contact h2").text(newContact.fullName());  //referencing the contact prototype
+      $(".first-name").text(newContact.firstName);
+      $(".last-name").text(newContact.lastName);
+      $("ul#addresses").text("");
+      newContact.addresses.forEach(function(address) {
+        $("ul#addresses").append("<li>" + address.fullAddress() + "</li>"); //calling to the address prototype and append the concatinated object
+      });
+    });
+
+    resetFields();
 
   });
 });
