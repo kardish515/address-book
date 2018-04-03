@@ -22,8 +22,11 @@ Address.prototype.fullAddress = function() { //prototype concatinating the addre
 // User Interface Logic
 $(document).ready(function() {
   $("#add-address").click(function() {
-  $("#new-addresses").append('<div class="new-address">' + '<div class="form-group">' +
-                                 '<label for="new-street">Street</label>' +
+  $("#new-addresses").append(  '<div class="new-address">' +
+                                '<div class="form-group">' + '<label for="address-type">Address Type</label>' + 
+                                  '<input type="text" class="form-control address-type">' +
+                                '</div>' +
+                                '<div class="form-group">' + '<label for="new-street">Street</label>' +
                                  '<input type="text" class="form-control new-street">' +
                                '</div>' +
                                '<div class="form-group">' +

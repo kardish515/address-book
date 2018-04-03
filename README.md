@@ -1,6 +1,6 @@
 # **Address Book**
 
-#### By William Chu and Julia Sheremet
+#### By William Chu, Julia Sheremet and Nick Kardish
 
 ## Description
 
@@ -29,4 +29,4 @@ JavaScript address book exercise to practice creating constructors and prototype
 
 * GPL
 
-William Chu and Julia Sheremet © 2018
+William Chu, Julia Sheremet and Nick Kardish © 2018
