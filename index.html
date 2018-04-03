@@ -27,24 +27,26 @@
                 <div class="new-address">
                   <div class="form-group">
                     <label for="address-type">Address Type</label>
-                    <input type="text" class="form-control address-type">
+                    <input type="text" class="form-control address-type" required>
                   </div>
                   <div class="form-group">
                     <label for="new-street">Street</label>
-                    <input type="text" class="form-control new-street">
+                    <input type="text" class="form-control new-street" required>
                   </div>
                   <div class="form-group">
                     <label for="new-city">City</label>
-                    <input type="text" class="form-control new-city">
+                    <input type="text" class="form-control new-city" required>
                   </div>
                   <div class="form-group">
                     <label for="new-state">State</label>
-                    <input type="text" class="form-control new-state">
+                    <input type="text" class="form-control new-state" required>
                   </div>
                 </div>
               </div>
+              <div id="extra-addresses">
+              </div>
               <span class="btn btn-primary" id="add-address">Another address</span>
-            <button type="submit" class="btn">Add</button>
+              <button type="submit" class="btn">Add</button>
             </form>
             <h2>Contacts:</h2>
             <ul id="contacts">
